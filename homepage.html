@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your System Name</title>
+    <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Logo and Navigation Menu -->
+        <div class="logo">
+            <img src="./images/logo.png" alt="Your System Logo">
+            <h1>ASK YOUR DOCTOR</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/html/homepage.html" >Home</a></li>
+                <li><a href="/html/faqandhelp.html">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctors"><a href="/html/doctorprofile.html">Doctors</a></a></li>
+                <li><a href="#appointments"><a href="/html/patientappointment.html">Appointments</a></a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact"><a href="/html/emergency.html">Emergency</a></a></li>
+                <li><a href="#patient-login"><a href="/html/patientlogin.html">Patient Login</a></a></li>
+                <li><a href="#doctor-login"><a href="/html/doctorlogin.html">Doctor Login</a></a></li>
+                <li><a href="#doctor-signup"><a href="/html/doctorsignup.html">Doctor signup</a></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Your System Name</h1>
+            <p>Your trusted healthcare partner</p>
+            <a href="/html/patientappointment.html" class="cta-button">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Being healthy should be part of your overall lifestyle. Living a healthy lifestyle can help prevent chronic diseases and long-term illnesses. Feeling good about yourself and taking care of your health are important for your self-esteem and self-image..</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2> OUR SERVICES </h2>
+        <div class="service-card">
+            <div class="service-icon">
+               <a href="/html/patientappointment.html"> <img src="./images/appintment.png" alt="Service 1 Icon"></a>
+            </div>
+            <div class="service-info">
+                <h3>APPOINTMENT</h3>
+                <p>a formal arrangement to meet or visit someone at a particular time and place: I'd like to make an appointment with Dr Evans, please. She had to cancel her dental appointment. [ + to infinitive ] I've got an appointment to see Ms Edwards at two o'clock.</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">
+                <a href="/html/info.html"><img src="./images/d.png" alt="Service 2 Icon"></a>
+            </div>
+            <div class="service-info">
+                <h3>SYMPTOMS</h3>
+                <p>
+                    Here, we treat and care for patients like our family! Better Medicine Makes a Better World! Doctors you can trust to inspire! Healthcare as a Right, Not a Business!</p>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">
+                <a href=""><img src="./images/DOCTORS.png" alt="Service 3 Icon"></a>
+            </div>
+            <div class="service-info">
+                <h3>QUALIFIED DOCTORS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt autem cumque magnam inventore dignissimos sed repudiandae facilis officia repellat esse nulla doloremque culpa labore provident, porro delectus? Facilis iure laudantium fuga voluptatem earum itaque eaque omnis magnam eligendi, ipsam nemo quia quam nesciunt deleniti laboriosam! Necessitatibus consectetur dolores porro officia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <h2>Our Doctors</h2>
+        <div class="doctor-card">
+            <img src="./images/d2.png" alt="Doctor 1">
+            <h3>Dr. John Doe</h3>
+            <p>Specialty: Cardiology</p>
+        </div>
+        <div class="doctor-card">
+            <img src="./images/d3.png" alt="Doctor 2">
+            <h3>Dr. Jane Smith</h3>
+            <p>Specialty: Pediatrics</p>
+        </div>
+        <div class="doctor-card">
+            <img src="./images/d4.png" alt="Doctor 3">
+            <h3>Dr. David Johnson</h3>
+            <p>Specialty: Orthopedics</p>
+        </div>
+    </section>
+<br><br><br>
+    <!-- Appointments Section -->
+    <section id="appointments" class="appointments">
+        <h2>Appointments</h2>
+        <p>Schedule an appointment with our doctors.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, veritatis pariatur vel nesciunt ullam adipisci possimus nulla, quas ad laborum voluptates officiis. Voluptates, saepe. Deleniti repellendus cupiditate quam ad repellat aut adipisci hic alias! Unde commodi corporis, suscipit corrupti omnis repudiandae minus. Saepe, placeat. Blanditiis officia magnam recusandae maxime dignissimos. Nemo labore quo numquam repellat ab, molestiae delectus sed.
+        </p>
+        <!-- Add appointment booking form or details here -->
+        <br><br><br>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <a href="https://linkdoctor.io/blog/">CHECK LATEST BLOGS</a>
+        <!-- Add blog posts and articles here -->
+    </section>
+    <br><br>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required> <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea> <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <!-- Add user testimonials here -->
+    </section>
+
+    <!-- Patient Login Section -->
+    <section id="patient-login" class="login">
+        <h2>Patient Login</h2>
+        <!-- Add patient login form or details here -->
+    </section>
+
+    <!-- Doctor Login Section -->
+    <section id="doctor-login" class="login">
+        <h2>Doctor Login</h2>
+        <!-- Add doctor login form or details here -->
+    </section>
+
+    <!-- Patient Signup Section -->
+    <section id="patient-signup" class="signup">
+        <h2>Patient Signup</h2>
+        <!-- Add patient signup form or details here -->
+    </section>
+
+    <!-- Doctor Signup Section -->
+    <section id="doctor-signup" class="signup">
+        <h2>Doctor Signup</h2>
+        <!-- Add doctor signup form or details here -->
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Footer Menu -->
+        <ul class="footer-menu">
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms-of-service">Terms of Service</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p>Email: info@example.com</p>
+            <p>Phone: +1-123-456-7890</p>
+            <p>123 Main Street, City, Country</p>
+        </div>
+        <!-- Social Media Icons -->
+        <div class="social-media">
+            <a href="#"><img src="./images/fac.png" alt="Facebook"></a>
+            <a href="#"><img src="./images/tw.png" alt="Twitter"></a>
+            <a href="#"><img src="./images/link.png" alt="LinkedIn"></a>
+        </div>
+        
+        
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/home.js"></script>
+</body>
+</html>

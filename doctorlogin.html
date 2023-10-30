@@ -1,0 +1,64 @@
+// server.js
+const express = require('express');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+const app = express();
+const port = 3000;
+
+// MongoDB connection string
+const mongoURI = 'mongodb://your_username:your_password@your_cluster_url/your_database_name';
+
+// Connect to MongoDB
+mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+const db = mongoose.connection;
+
+db.on('error', (err) => {
+    console.error('MongoDB connection error:', err);
+});
+
+db.once('open', () => {
+    console.log('Connected to MongoDB');
+});
+
+// Define a schema for the user
+const userSchema = new mongoose.Schema({
+    username: String,
+    password: String,
+});
+
+// Create a User model
+const User = mongoose.model('User', userSchema);
+
+// Middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// Serve HTML file
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/doctorlogin.html');
+});
+
+// Handle login form submission
+app.post('/login', async (req, res) => {
+    const { username, password } = req.body;
+
+    try {
+        // Find user in the database
+        const user = await User.findOne({ username, password });
+
+        if (user) {
+            res.send('Login successful');
+        } else {
+            res.status(401).send('Invalid credentials');
+        }
+    } catch (error) {
+        console.error('Error during login:', error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
+// Start the server
+app.listen(port, () => {
+    console.log(`Server is running at http://localhost:${port}`);
+});
